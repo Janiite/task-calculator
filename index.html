@@ -5,59 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
     <title>Document</title>
   </head>
   <body>
     <main>
       <div class="calculator">
-        <div class="display">
-          <h1 id="result">Result</h1>
+        <div id="display" class="display">
         </div>
+          
         <div class="buttons">
           <table class="table">
             <tbody>
-              <tr>
+              <tr class="firstRow">
                 <td><input type="button" onclick="" value="%" /></td>
-                <td><input type="button" onclick="" value="CE" /></td>
-                <td><input type="button" onclick="" value="C" /></td>
-                <td><input type="button" onclick="" value="X" /></td>
+                <td><input type="button" id="clear" onclick="" value="CE" /></td>
+                <td><input type="button" id="delete" onclick="" value="C" /></td>
               </tr>
               <tr>
-                <td><input type="button" onclick="" value="1/x" /></td>
-                <td><input type="button" onclick="" value="x*x" /></td>
-                <td><input type="button" onclick="" value="2x" /></td>
-                <td><input type="button" onclick="" value="/" /></td>
+                <td><input type="button" id="decimal" onclick="" value="1/x" /></td>
+                <td><input type="button" id="square" onclick="" value="x*x" /></td>
+                <td><input type="button" id="squareRoot" onclick="" value="2x" /></td>
+                <td><input type="button" class="number" onclick="" value="/" /></td>
               </tr>
 
               <tr>
-                <td><input type="button" onclick="" value="7" /></td>
-                <td><input type="button" onclick="" value="8" /></td>
-                <td><input type="button" onclick="" value="9" /></td>
-                <td><input type="button" onclick="" value="x" /></td>
+                <td><input type="button" class="number" onclick="" value="7" /></td>
+                <td><input type="button" class="number" onclick="" value="8" /></td>
+                <td><input type="button" class="number" onclick="" value="9" /></td>
+                <td><input type="button" class="number" onclick="" value="*" /></td>
               </tr>
               <tr>
-                <td><input type="button" onclick="" value="4" /></td>
-                <td><input type="button" onclick="" value="5" /></td>
-                <td><input type="button" onclick="" value="6" /></td>
-                <td><input type="button" onclick="" value="-" /></td>
+                <td><input type="button" class="number" onclick="" value="4" /></td>
+                <td><input type="button" class="number" onclick="" value="5" /></td>
+                <td><input type="button" class="number" onclick="" value="6" /></td>
+                <td><input type="button" class="number" onclick="" value="-" /></td>
               </tr>
               <tr>
-                <td><input type="button" onclick="" value="1" /></td>
-                <td><input type="button" onclick="" value="2" /></td>
-                <td><input type="button" onclick="" value="3" /></td>
-                <td><input type="button" onclick="" value="+" /></td>
+                <td><input type="button" class="number" onclick="" value="1" /></td>
+                <td><input type="button" class="number" onclick="" value="2" /></td>
+                <td><input type="button" class="number" onclick="" value="3" /></td>
+                <td><input type="button" id="add" class="number" onclick="" value="+" /></td>
               </tr>
               <tr>
-                <td><input type="button" onclick="" value="+/-" /></td>
-                <td><input type="button" onclick="" value="0" /></td>
-                <td><input type="button" onclick="" value="." /></td>
-                <td><input type="button" onclick="" value="=" /></td>
+                <td><input type="button" id="opposite" onclick="" value="+/-" /></td>
+                <td><input type="button" class="number" onclick="" value="0" /></td>
+                <td><input type="button" class="number" onclick="" value="." /></td>
+                <td><input type="button" onclick="" id="equal" value="=" /></td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
+      
     </main>
     <script src="script.js"></script>
     <script
