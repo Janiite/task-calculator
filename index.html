@@ -16,16 +16,17 @@
   <body>
     <main>
       <div class="calculator">
-        <div id="display" class="display">
+        <div  class="display">
+          <p id="display"></p>
         </div>
           
-        <div class="buttons">
+        
           <table class="table">
             <tbody>
               <tr class="firstRow">
-                <td><input type="button" onclick="" value="%" /></td>
-                <td><input type="button" id="clear" onclick="" value="CE" /></td>
-                <td><input type="button" id="delete" onclick="" value="C" /></td>
+                <td><button onclick="" value="%">%</button></td>
+                <td><button id="clear">CE</button></td>
+                <td><button id="delete">C</button></td>
               </tr>
               <tr>
                 <td><input type="button" id="decimal" onclick="" value="1/x" /></td>
@@ -35,7 +36,7 @@
               </tr>
 
               <tr>
-                <td><input type="button" class="number" onclick="" value="7" /></td>
+                <td><button class="number" onclick="" value="7">7</button></td>
                 <td><input type="button" class="number" onclick="" value="8" /></td>
                 <td><input type="button" class="number" onclick="" value="9" /></td>
                 <td><input type="button" class="number" onclick="" value="*" /></td>
