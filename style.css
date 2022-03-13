@@ -43,10 +43,13 @@ main {
   height: 60%;
   width: 90%;
 }
-input:hover {background-color: coral;}
+button:hover {
+  background-color: coral;
+  color: white;
+}
 
-input, button {
-  width: 100%;
+ button {
+  width: 160px;
   height: 50px;
   border-radius: 15px;
   border: solid black 3px;
