@@ -2,6 +2,17 @@ $(document).ready(function () {
   $(".number").click(function () {
     $("#display").append(this.value);
   });
+  $("#operator").click(function () {
+    let value = $("#display").text();
+    value = value.split("");
+    if (value[value.length - 1] !== ".") {
+      $("#display").append(this.value);
+    }else if (value[value.length - 1] !== '.' && value.includes(".") && value.includes("+")){
+      $("#display").append(this.value);
+    }else{
+
+    }
+  });
 
   $("#clear").click(function () {
     $("#display").empty();

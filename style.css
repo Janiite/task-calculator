@@ -9,10 +9,11 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color:#86A8E7 ;
 }
 
 .calculator {
-  background-color: aqua;
+  background-color: #D16BA5;
   height: 60%;
   width: 50%;
   display: flex;
@@ -20,19 +21,22 @@ main {
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
+  border: solid black 3px;
 }
 
 .display {
-  background-color: beige;
+  background-color:white;
   width: 90%;
   height: 20%;
   border-radius: 15px;
+  border: solid black 3px;
 }
 
 #display {
   font-size: 45px;
   text-align: end;
   padding: 25px;
+  color: #0a1e23;
 }
 
 .table {
@@ -45,7 +49,10 @@ input, button {
   width: 100%;
   height: 50px;
   border-radius: 15px;
+  border: solid black 3px;
   font-size: 25px;
+  background-color: #5FFBF1;
+    color: #fc4552;
 }
 
 
@@ -54,3 +61,4 @@ input, button {
     
     width: 80%;
   }
+} 
