@@ -43,10 +43,6 @@ main {
   height: 60%;
   width: 90%;
 }
-button:hover {
-  background-color: coral;
-  color: white;
-}
 
  button {
   width: 160px;
@@ -55,7 +51,16 @@ button:hover {
   border: solid black 3px;
   font-size: 25px;
   background-color: #5FFBF1;
-    color: #fc4552;
+  
+}
+button:hover {
+  background-color: coral;
+  color: white;
+}
+
+#equal, .color{
+  background-color: #475d85;
+  color: white;
 }
 
 
